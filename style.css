@@ -1,0 +1,74 @@
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  You can see that some of the selectors are already prepared for you, but everything is up to you
+*/
+
+/*
+  When you target Body the rules will apply to everything on your page
+  This is usefull for implementing fonts or background
+*/
+
+body {
+  font-family: "Sono", sans-serif;
+  background-color: rgb(207, 255, 214);
+}
+
+/* Page structure - this will basically center everything to the center of the page*/
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our logo */
+.logo {
+  max-width: 420px;
+  max-height: 300px;
+  transition-property: rotate;
+  transition-duration: 5s;
+}
+.logo:hover {
+  rotate: 720deg;
+}
+
+/* Main text area */
+.main {
+  margin: 0;
+  max-width: 600px;
+  text-align: left;
+}
+
+.title {
+  color: blue;
+  font-size: 60px;
+}
+
+.subtitle {
+  color: blue;
+  text-align: center;
+}
+
+.list {
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px 50px 10px;
+  text-align: left;
+}
+
+.superd {
+  font-weight: bold;
+  transition-property: color, font-size, text-shadow;
+  transition-duration: 2s;
+}
+.superd:hover {
+  color: red;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px black;
+}
